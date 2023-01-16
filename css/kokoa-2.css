@@ -1,0 +1,28 @@
+body {
+  background-color: #ff6347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.middle_box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.inside {
+  background-color: teal;
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+}
+.inside-second {
+  width: 100%;
+  border-style: dashed;
+}

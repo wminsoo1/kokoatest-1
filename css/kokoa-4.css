@@ -1,0 +1,86 @@
+body {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 85%;
+  width: 75%;
+  background-color: #6bbcbe;
+}
+
+article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-animation {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin-bottom: 150px;
+  animation: rolling ease-in-out 1.5s infinite;
+}
+
+.second-animation {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.first-animation div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.second-animation div {
+  background-color: white;
+  width: 10px;
+  height: 60px;
+  animation: scaling ease-in-out 1s infinite;
+}
+
+@keyframes rolling {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes scaling {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaley(2);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+
+.second-animation div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.second-animation div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.second-animation div:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.second-animation div:last-child {
+  animation-delay: 0.4s;
+}

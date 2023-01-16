@@ -1,0 +1,138 @@
+body {
+  height: 100vh;
+  border: 10px solid aquamarine;
+  margin: 0;
+}
+
+.box {
+  margin: 30px 20px;
+}
+
+.playlist {
+  display: flex;
+  align-items: center;
+}
+
+.playlist_title {
+  margin-left: 140px;
+  font-weight: 600;
+}
+
+.albumcover {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.albumcover_photo {
+  width: 90px;
+  height: 90px;
+  background-color: #ffbd11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-right: 15px;
+}
+
+.albumcover_photo i {
+  color: white;
+  opacity: 0.9;
+}
+
+.albumcover_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.albumcover_title span:first-child {
+  font-size: 30px;
+  font-weight: 600;
+  width: 50%;
+  line-height: 90%;
+}
+
+.albumcover_title span:last-child {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.status div {
+  border-bottom-width: 5px;
+}
+
+.status-play {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-play span {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.status-heart,
+.status-plus {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-list__song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.song-list__cover {
+  width: 50px;
+  height: 50px;
+  background-color: #f85a2a;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.song-list__data h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.song-list__data h6 {
+  opacity: 0.8;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+header i {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 28px;
+}
